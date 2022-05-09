@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2? family= PT+Sans & display=swap');
+
+
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    font-family: 'poppins', sans-serif;
+
+}
+body .imgo{
+    top: 0px;
+    right: 0%;
+    width: -500px;
+    height: 20%;
+    display: flex ;
+    position: absolute;
+    margin: 5px;
+ } 
+
+
+.calendario{
+    position: relative;
+    background:#fff ;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border: 15px solid #fff;
+    box-shadow: 0  10px 30px 30px  #000 ;
+    text-decoration: none ;
+
+}
+.calendario .fecha{
+    width: 800px;
+    padding: 30px;
+    box-sizing: border-box;
+  
+}
+
+
+.calendario .fecha h3{
+    margin: 0 0 20px;
+    padding:0;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.calendario .fecha .dias{
+    display:flex;
+    flex-wrap:wrap;
+  
+
+}
+.calendario .fecha .dias .dia,
+.calendario .fecha .dias .dia  a .numero  {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none ;
+    
+}
+
+
+.colorboton{
+    border-radius:50%;
+    display: flex;
+    border: rgb(156, 156, 156);
+    background:#8f8a8a;
+    height:60px;
+   width: 60px;
+   align-items: center;
+   cursor:pointer;
+}
+
+
+.calendario .fecha .dias  .activo{
+    background: #5e4292;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    }
+.calendario  .numero{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.calendario .imagen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    left: 55%;
+   
+
+}
+
+.calendario  .imagen  img{
+    position: absolute;
+    top: 15%;
+    left: 300;
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 500px; 
+
+}
+.calendario  .sigui  img{
+   position: absolute;
+   top: 6px;
+   right: 6px;
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   line-height: 28px ;
+   cursor:pointer;
+}
+
+.calendario  .sigu  img{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+    cursor:pointer;
+ }
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notas {
+    width: 600px;
+    top: 400px;
+    height: 300px;
+    text-align:left;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.modal{
+    width: 50%;
+    height: 65%;
+    background: #fff;
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.8s;
+    transform: translateY(0%);
+    border-radius: 10px;
+    
+}
+.close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #f44336;
+    color: #fff;
+    line-height: 28px ;
+    cursor:pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+.modal-close{
+    transform: translateY(-200%);
+}
+.modal > img{
+    height: 50%;
+    
+}
+.wrap {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.widget {
+    width: 40%;
+    margin: 2em;
+}
+
+.widget p{
+    display:inline-block;
+    line-height: 1em;
+    
+}
+
+a{
+    color: #000;
+    text-decoration-line: none
+}
+
+
+.reloj .caja-horas{
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 727px;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+   
+}
+
+.reloj .caja-minutos{
+    display: inline-block;
+    align-items:flex-end;
+    position: absolute;
+    top: 410px;
+    left: 742px;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+}
+
+
+
+.reloj .caja-segundos{
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 763px;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+    
+    
+}
+
+
+.reloj .uu{
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 759px;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+
+}
+.reloj .uo{
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 738px;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+
+}
+
+
+
+.reloj .ampm{
+    display: inline-block;
+    position: absolute;
+    top: 404px;
+    left: 783px;
+    width: 25px;
+    height: 25px;
+    line-height: 28px ;
+    
+  
+}
+
+
+    
+
